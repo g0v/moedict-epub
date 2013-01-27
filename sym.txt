@@ -1,4 +1,3 @@
-
 8e4a 常⃞
 8e4b 次⃞
 8e4c 似⃞
@@ -7,44 +6,44 @@
 8e51
 8e5a
 8e65
-8e79
-8e7a
-8e7b
-8e7c
-8e7d
-8e7e
-8ea1
-8ea2
+8e79 ☰
+8e7a ☷
+8e7b ☱
+8e7c ☲
+8e7d ☴
+8e7e ☳
+8ea1 ☵
+8ea2 ☶
 8ea9
 8eaa
 8eb0
 8eb3
 8ebc
 8ebd
-8ec4
+8ec4 ⽧
 8ec8
 8ec9
 8eca
 8ecb
-8ed3
-8ed9
+8ed3 擀
+8ed9 秔
 8eda 稉
-8ee1
-8ee3
+8ee1 ⼅
+8ee3 ⼌
 8ee6
-8ee8
+8ee8 ㄙ
 8eee
 8eef 无
-8ef0
-8ef3
-8ef4
+8ef0 ⼂
+8ef3 ⼴
+8ef4 ⼵
 8ef5 幺
 8ef7 彐
 8ef8 彡
 8f43
 8f4e
 8f53
-8f54
+8f54 ⾡
 8f57
 8f59
 8f61
@@ -56,9 +55,9 @@
 8f7b
 8fa2
 8fa6
-8fa8
+8fa8 ㄎ
 8fad
-8fb8
+8fb8 忼
 8fbe
 8fd5
 8fe4
@@ -71,7 +70,7 @@
 904c
 9057
 905f
-9064
+9064 从
 9067
 906a
 906b
@@ -128,7 +127,7 @@
 925b
 9263
 9264
-9265
+9265 蹷
 926b
 92a4
 92b7
@@ -168,12 +167,12 @@
 94b0
 94b8
 94bc
-94d2
+94d2 巛
 94de
-94e1
-94eb
-94ec
-94fb
+94e1 冲
+94eb 眡
+94ec 眎
+94fb 虵
 9546
 9552
 9554
@@ -181,7 +180,7 @@
 9569
 9572
 957d 参
-95a1
+95a1 呝
 95c6
 95c7
 95c8
@@ -215,14 +214,14 @@
 96f1
 9743
 975b
-976a
+976a 烱
 9773
-977b
+977b 喆
 97a2
 97bf
 97cd
 97ce
-97d2
+97d2 ⇒
 97d3
 97d5
 97d5 似⃞
@@ -230,7 +229,7 @@
 97d6 辨⃞
 97dd
 97e3 綴⃞
-97e7
+97e7 ü
 97ed
 97f4
 97f5
@@ -252,10 +251,10 @@
 98b4
 98b6
 98bb
-98bd
-98be
-98bf
-98c0
+98bd ⓰
+98be ⓱
+98bf ⓲
+98c0 ⓳
 98c2
 98d0
 98d4
@@ -354,14 +353,14 @@ fa60
 fa65
 fa6f
 fa71
-fa74
-fa78
-faa2
-faa7
+fa74 ⼓
+fa78 ⽨
+faa2 坂
+faa7 犇
 fab9
 fabc
 fac5
-fad5
+fad5 ⼎
 fae1
 fae8
 faec
@@ -369,17 +368,17 @@ faef
 faf4
 faf6
 fafa
-fb41
-fb45
-fb47
-fb4f
+fb41 穅
+fb45 髴
+fb47 
+fb4f 倈
 fb52
-fb6c
-fb6d
+fb6c 疱
+fb6d 礮
 fb74
 fb77
 fbaf
-fbbf
+fbbf ⽁
 fbc1
 fbc5
 fbcc
@@ -387,9 +386,9 @@ fbe1
 fbe2
 fbe7
 fbeb
-fbf4
+fbf4 ⼍
 fbf8
-fbfd
+fbfd ⼧
 fc41
 fc45
 fc48
@@ -418,7 +417,7 @@ fd40
 fd41
 fd44
 fd46
-fd49 
+fd49 ⼇
 fd4f
 fd51
 fd53
@@ -442,8 +441,8 @@ fdd3
 fde9
 fdec
 fdfc
-fe41
-fe4f
+fe41 甯
+fe4f 寗
 fe52 ㊀
 fe53 ㊁
 fe54 ㊂
@@ -505,8 +504,7 @@ fed9 嘆⃞
 fed9 歎⃞
 feda 連⃞
 fee0 代⃞
-feed
+feed 倮
 feef
 fef3
-fefc
 fefc 鸁
