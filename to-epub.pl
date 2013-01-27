@@ -7,8 +7,15 @@ use Mojo::DOM;
 use Encode qw(decode_utf8);
 
 sub get_sym {
-    my $content = decode_utf8 read_file("sym.txt");
-    my %sym = split /\s/ => $content;
+    my (%sym,$fh);
+    open $fh, "<:encoding(utf8)", "sym.txt";
+    while(<$fh>) {
+        chomp;
+        my ($k,$v)=split /\s/ => $_;
+        if ($v) {
+            $sym{$k} = $v;
+        }
+    }
     return \%sym;
 }
 
