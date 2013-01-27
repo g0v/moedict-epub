@@ -76,8 +76,8 @@ for my $file (<newdict/*.html>) {
 @chars = sort @chars;
 
 my $epub = EBook::EPUB->new;
-$epub->add_title('那部字典');
-$epub->add_author('教育部');
+$epub->add_title('萌典');
+$epub->add_author('3du.tw');
 
 for my $char (@chars) {
     my $fn_in_epub = $char->{char} . ".html";
