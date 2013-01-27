@@ -6,7 +6,14 @@ use File::Slurp qw(read_file);
 use Mojo::DOM;
 use Encode qw(decode_utf8);
 
+sub get_sym {
+    my $content = decode_utf8 read_file("sym.txt");
+    my %sym = split /\s/ => $content;
+    return \%sym;
+}
+
 sub get_xhtml {
+    state $sym = get_sym();
     my ($file, $char) = @_;
     my $content = decode_utf8 read_file($file);
     my $dom = Mojo::DOM->new("<div>$content</div>");
@@ -18,18 +25,30 @@ sub get_xhtml {
             }
         }
     );
+    $dom->find("img")->each(
+        sub {
+            my $e = $_;
+            my $imgfont = lc($_->attrs("src") =~ s/^images\///r =~ s/\.jpg$//r);
+            my $t = $sym->{$imgfont};
+            if (!$t) {
+                print STDERR "MISSING: $imgfont\n";
+            }
+            $e->replace("<span>$t</span>");
+        }
+    );
+    
     my $body = $dom->content_xml;
     return <<XHTML;
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>$char</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>$char</title>
 </head>
 <body>
-<h1>$char</h1>
-$body
+  <h1>$char</h1>
+  $body
 </body>
 </html>
 XHTML
@@ -45,7 +64,6 @@ for my $file (<newdict/*.html>) {
         file => $file,
         xhtml => get_xhtml($file, $char)
     };
-    last if @chars > 10;
 }
 
 @chars = sort @chars;
