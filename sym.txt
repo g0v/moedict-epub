@@ -1,11 +1,23 @@
+﻿# no matching characters
+
+8e5a {拚-厶+ㄊ}
+8fef {上日下黽}
+91df {簧}
+95c8 {糭-米+木}
+9a63 {上夕下言}
+9aaf {竹頭+虛}
+92cf
+9a5a
+
+# matched characters
+
 8e4a 常⃞
 8e4b 次⃞
 8e4c 似⃞
 8e4d 反⃞
-8e50
-8e51
-8e5a
-8e65
+8e50 槅
+8e51 祴
+8e65 㹠
 8e79 ☰
 8e7a ☷
 8e7b ☱
@@ -14,317 +26,309 @@
 8e7e ☳
 8ea1 ☵
 8ea2 ☶
-8ea9
-8eaa
-8eb0
-8eb3
-8ebc
-8ebd
-8ec4 ⽧
-8ec8
-8ec9
-8eca
-8ecb
+8ea9 厓
+8eaa 鮋
+8eb0 䢵
+8eb3 伃
+8ebc ⚋
+8ebd ⚊
+8ec4 疒
+8ec8 葜
+8ec9 鼧
+8eca 妸
+8ecb 鞲
 8ed3 擀
 8ed9 秔
 8eda 稉
 8ee1 ⼅
-8ee3 ⼌
-8ee6
-8ee8 ㄙ
-8eee
+8ee3 冂
+8ee6 卩
+8ee8 ⼛
+8eee ⼢
 8eef 无
 8ef0 ⼂
 8ef3 ⼴
 8ef4 ⼵
 8ef5 幺
 8ef7 彐
-8ef8 彡
-8f43
-8f4e
-8f53
-8f54 ⾡
-8f57
-8f59
-8f61
-8f67
-8f6a
-8f6b
-8f73
-8f77
-8f7b
-8fa2
-8fa6
-8fa8 ㄎ
-8fad
+8ef7 彐
+8ef8 ⼺
+8f43 ⼡
+8f4e 烖
+8f53 苽
+8f54 辵
+8f57 䒷
+8f59 袿
+8f61 椁
+8f67 瓌
+8f6a 恑
+8f6b 鞼
+8f73 卝
+8f77 鮌
+8f7b 觵
+8fa2 愙
+8fa6 嘅
+8fa8 丂
+8fad 簆
 8fb8 忼
-8fbe
-8fd5
-8fe4
-8fec
-8fef
-8ffa
-8ffd
-9044
-9048
-904c
-9057
-905f
+8fbe 絝
+8fd5 䴈
+8fe4 蟮
+8fec 鯶
+8ffa 茝
+8ffd 蜹
+9044 鰮
+9048 頮
+904c 苢
+9057 𦬊
+905f 鼂
 9064 从
-9067
-906a
-906b
-9071
-907a
-907e
-90a1
-90a6
-90ae
+9067 筯
+906a 倽
+906b 哚
+9071 躧
+907a 陁
+907e 剗
+90a1 匌
+90a6 儁
+90ae 椀
 90b5 H₂
-90ba
 90ba 簡⃞
-90bc
-90c3
-90c6
-90c7
-90c8
-90c9
-90d5
-90d6
-90e3
-90e5
-90f8
-90fb
-90fe
-9144
-9147
-9151
-9152
-9156
-9157
-9159
-915a
-915b
-915d
-916e
-9178
-91a1
-91a7
-91a8
-91b3
-91c3
-91c8
-91c9
-91d6
-91dd
-91df
-91e7
-91eb
-91f2
-91f3
-9245
-9249
-925b
-9263
-9264
+90bc 礚
+90c3 䆉
+90c6 譌
+90c7 𧳵
+90c8 戞
+90c9 珏
+90d5 晳
+90d6 顇
+90e3 帀
+90e5 鮝
+90f8 㔶
+90fb 髤
+90fe 倸
+9144 劚
+9147 麕
+9151 竱
+9152 㑳
+9156 椉
+9157 辬
+9159 藳
+915a 巵
+915b 拕
+915d 稭
+916e 輨
+9178 晧
+91a1 㟏
+91a7 嘑
+91a8 唿
+91b3 惽
+91c3 竢
+91c8 𦞦
+91c9 䁮
+91d6 黄
+91dd 㡛
+91e7 𩐋
+91eb 覊
+91f2 垍
+91f3 㺎
+9245 䛟
+9249 叚
+925b 唕
+9263 襍
+9264 灾
 9265 蹷
-926b
-92a4
-92b7
-92b8
-92c2
-92cf
-92e2
-9341
-934e
-935a
-935c
-9366
-9369
-936c
-9370
-9372
-9376
-9379
-937a
-937d
-93d8
-93db
-93e0
-93e1
-93e4
-93f7
-93f8
-93fb
-9449
-9452
-9460
-9463
-946a
-947c
-94a2
-94ad
-94b0
-94b8
-94bc
+926b 羮
+92a4 韀
+92b7 瑨
+92b8 畺
+92c2 凥
+92e2 埛
+9341 閴
+934e 繦
+935a 𡙇
+935c 慤
+9366 熺
+9369 葈
+936c 磶
+9370 䦧
+9372 陿
+9376 衺
+9379 蠏
+937a 緤
+937d 訩
+93d8 卐
+93db 瑠
+93e0 廵
+93e1 卂
+93e4 鼅
+93f7 袠
+93f8 寘
+93fb 穉
+9449 謿
+9452 飦
+9460 鼄
+9463 爥
+946a 斵
+947c 义
+94a2 詧
+94ad 犫
+94b0 醻
+94b8 韂
+94bc 齓
 94d2 巛
-94de
+94de 牕
 94e1 冲
 94eb 眡
 94ec 眎
 94fb 虵
-9546
-9552
-9554
-9557
-9569
-9572
+9546 羴
+9552 踈
+9554 尗
+9557 竪
+9569 衽
+9572 顬
 957d 参
 95a1 呝
-95c6
-95c7
-95c8
-95cd
-95f9
-9644
-9646
-9652
-9653
-9657
-9659
-965b
-965e
+95a1 呝
+95c6 䰖
+95c7 罇
+95cd 憁
+95f9 螋
+9644 遡
+9646 髿
+9652 笋
+9653 凇
+9657 峩
+9659 鵞
+965b 頟
+965e 歺
 966a 翶
-9671
-9675
+9671 揞
+9675 扅
 967a 㠯
 967b 狀⃞
-96a6
-96a7
-96a8
-96aa
-96bc
-96bd
-96c2
-96c4
-96c7
-96ce
-96d2
-96d6
-96f1
-9743
-975b
+96a6 嚈
+96a7 釾
+96a8 壄
+96aa 殜
+96bc 㫃
+96bd 𣝓
+96c2 陻
+96c4 侌
+96c7 唫
+96ce 鸎
+96d2 暎
+96d6 鼃
+96f1 䱷
+9743 蒕
+975b 䘿
 976a 烱
-9773
+9773 鰕
 977b 喆
-97a2
-97bf
-97cd
-97ce
-97d2 ⇒
-97d3
-97d5
+97a2 餦
+97bf 颰
+97cd 槀
+97ce 㲪
+97d2 →
+97d3 𩢷
 97d5 似⃞
-97d6
 97d6 辨⃞
-97dd
+97dd 舋
 97e3 綴⃞
 97e7 ü
-97ed
-97f4
-97f5
-97f6 α
-97fa
-9842
-9848
-984d
-984f
-9850
-9851
-9852
-985f
-9869
-9879
-98aa
-98b2
-98b3
-98b4
-98b6
-98bb
+97ed 㧙
+97f4 䁆
+97f5 㘉
+97f6 ａ
+97fa 䔿
+9842 曃
+9848 䞤
+984d 叀
+984f 鱲
+9850 𥫱
+9851 篅
+9852 䉛
+985f 䫜
+9869 㢝
+9879 𦞂
+98aa 㕒
+98b2 䏽
+98b3 𠟪
+98b4 㗘
+98b6 𨄅
+98bb 玘
 98bd ⓰
 98be ⓱
 98bf ⓲
 98c0 ⓳
-98c2
-98d0
-98d4
-98d5
-98dd
-98e5
-98e6
-98eb
-98ec
-98f1
-98f3
-98f4
-98f8
-98fe
-9940
-9941
-9944
-9945
-9946
-9947
-9948
-99ab
-99ac
-99cd
-99ec
-99ed
-99ef
-99f0
-99f1
-99f4
-99f5
-99f6
-99f8
-99f9
-99fb
-99fc
-99fd
-9a40
-9a44
-9a46
-9a4a
-9a4b
-9a55
-9a57
-9a58
-9a5a
-9a5b
-9a5c
-9a63
-9a65
-9a6a
-9a6c
-9a6e
-9a78
-9a79
-9a7c
-9a7d
-9a7e
-9aa2
-9aa4
-9aab
-9aad
-9aae
-9aaf
-9ab1
-9ab3
-9abd
-9acb
-9ad4
-9b47
+98c2 㩍
+98d0 磓
+98d4 輢
+98d5 軎
+98dd 䇓
+98e5 慜
+98e6 䃴
+98eb 裑
+98ec 𠐍
+98f1 魪
+98f3 溭
+98f4 摚
+98f8 㩴
+98fe 㣥
+9940 𠗌
+9941 䞟
+9944 娽
+9945 䋶
+9946 𥢧
+9947 𨃓
+9948 䦯
+99ab 垂
+99ac 華
+99cd 善
+99ec 帉
+99ed 㕹
+99ef 硣
+99f0 䅳
+99f1 𥽈
+99f4 䍮
+99f5 𤍿
+99f6 䍤
+99f8 㴆
+99f9 𦇎
+99fb 䬀
+99fc 晐
+99fd 䯱
+9a40 䰄
+9a44 砊
+9a46 𩂣
+9a4a 㵠
+9a4b 聄
+9a55 糂
+9a57 癧
+9a58 黣
+9a5b 𤎖
+9a5c 槩
+9a65 鰧
+9a6a 蘽
+9a6c 𧂭
+9a6e 裒
+9a78 㺜
+9a79 䍽
+9a7c 䱇
+9a7d 奞
+9a7e 䪻
+9aa2 㵣
+9aa4 醶
+9aab 蟩
+9aad 𦁊
+9aae 𥒜
+9ab1 鉂
+9ab3 䫉
+9abd 㵒
+9acb 篗
+9ad4 琗
+9b47 厷
 9bcd ǖ
 9bce ǘ
 9bcf ǚ
@@ -339,108 +343,107 @@
 9ce2 ǎ
 9ce3 à
 9ce4 g
-c6c7 ㄈ
-f9d9
-f9dc
-fa44
-fa49
-fa4b
-fa4c
-fa53
-fa5c
-fa5d
-fa60
-fa65
-fa6f
-fa71
-fa74 ⼓
-fa78 ⽨
+c6c7 匸
+f9d9 墻
+f9dc 嫺
+fa44 愗
+fa49 貛
+fa4b 繮
+fa4c 䍡
+fa53 礴
+fa5c 鉢
+fa5d 愽
+fa60 覇
+fa65 栢
+fa6f 僃
+fa71 襃
+fa74 勹
+fa78 癶
 faa2 坂
 faa7 犇
-fab9
-fabc
-fac5
-fad5 ⼎
-fae1
-fae8
-faec
-faef
-faf4
-faf6
-fafa
+fab9 䟆
+fabc 躃
+fac5 禀
+fad5 冫
+fae1 㕷
+fae8 烟
+faec 噍
+faef 粃
+faf4 戹
+faf6 韠
+fafa 覩
 fb41 穅
 fb45 髴
-fb47 
+fb47 𢠳
 fb4f 倈
-fb52
+fb52 鯿
 fb6c 疱
 fb6d 礮
-fb74
-fb77
-fbaf
-fbbf ⽁
-fbc1
-fbc5
-fbcc
-fbe1
-fbe2
-fbe7
-fbeb
-fbf4 ⼍
-fbf8
-fbfd ⼧
-fc41
-fc45
-fc48
-fc49
-fc4b
-fc5a
-fc60
-fc64
-fc66
-fc67
-fc6e
-fc77
+fb74 曕
+fb77 牀
+fbaf 𢓳
+fbbf 攴
+fbc1 幞
+fbc5 蟇
+fbcc 脉
+fbe1 鞪
+fbe2 畮
+fbe7 蝱
+fbeb 醿
+fbf4 冖
+fbf8 䄙
+fbfd 宀
+fc41 腼
+fc45 珉
+fc48 緍
+fc49 𪰋
+fc4b 鰵
+fc5a 䬠
+fc60 飰
+fc64 旊
+fc66 峯
+fc67 舚
+fc6e 鬴
 fc77 丿
-fc79
-fca7
-fcac
-fcad
-fcb6
-fcbd
-fcc3
-fcc8
-fcd0
-fceb
-fcf9
-fd40
-fd41
-fd44
-fd46
-fd49 ⼇
-fd4f
-fd51
-fd53
-fd55
-fd58
-fd5c
-fd60
-fd65
-fd6e
-fd71
-fd77
-fd7d
-fda7
-fdb2
-fdbc
-fdc1
-fdc9
-fdca
-fdcc
-fdd3
-fde9
-fdec
-fdfc
+fc79 疴
+fca7 虬
+fcac 瑇
+fcad 隶
+fcb6 鬭
+fcbd 𤺺
+fcc3 銱
+fcc8 攧
+fcd0 匵
+fceb 媠
+fcf9 㒓
+fd40 謟
+fd41 縧
+fd44 鼗
+fd46 鞉
+fd49 亠
+fd4f 壜
+fd51 䗊
+fd53 餹
+fd55 幐
+fd58 蹏
+fd5c 𩮜
+fd60 髢
+fd65 䩦
+fd6e 舚
+fd71 郄
+fd77 鞓
+fd7d 憹
+fda7 𠜶
+fdb2 孼
+fdbc 靁
+fdc1 㛂
+fdc9 鮎
+fdca 鐧
+fdcc 䗶
+fdd3 嫏
+fde9 𣓨
+fdec 勑
+fdfc 瘻
 fe41 甯
 fe4f 寗
 fe52 ㊀
@@ -493,7 +496,7 @@ fea2 z̄
 fea3 ź
 fea4 ž
 fea5 z̀
-feb4
+feb4 臁
 fed3 名⃞
 fed4 動⃞
 fed5 形⃞
@@ -501,322 +504,9 @@ fed6 副⃞
 fed7 助⃞
 fed8 介⃞
 fed9 嘆⃞
-fed9 歎⃞
 feda 連⃞
 fee0 代⃞
 feed 倮
-feef
-fef3
-fefc 鸁
-8e79 ☰
-8e7a ☷
-8e7b ☱
-8e7c ☲
-8e7d ☴
-8e7e ☳
-8ea1 ☵
-8ea2 ☶
-8ebc ⚋
-8ebd ⚊
-9bcd ǖ
-9bce ǘ
-9bcf ǚ
-9bd0 ǜ
-9bd4 ề
-9cda å
-9cdb e̊
-9cdc i̊
-9cdd o̊
-9ce0 ā
-9ce1 á
-9ce2 ǎ
-9ce3 à
-9ce4 g
-fe52 ㊀
-fe53 ㊁
-fe54 ㊂
-fe55 ㊃
-fe56 ㊄
-fe57 ㊅
-fe58 ㊆
-fe59 ➊
-fe5a ➋
-fe5b ➌
-fe5c ➍
-fe5d ➎
-fe5e ➏
-fe5f ➐
-fe60 ➑
-fe61 ➒
-fe62 ➓
-fe63 ⓫
-fe64 ⓬
-fe65 ⓭
-fe66 ⓮
-fe67 ⓯
-fe68 ā
-fe69 á
-fe6a ǎ
-fe6b à
-fe6c ē
-fe6d é
-fe6e ě
-fe6f è
-fe70 ī
-fe71 í
-fe72 ǐ
-fe73 ì
-fe74 ō
-fe75 ó
-fe76 ǒ
-fe77 ò
-fe78 r̄
-fe79 ŕ
-fe7a ř
-fe7b r̀
-fe7c ū
-fe7d ú
-fe7e ǔ
-fea1 ù
-fea2 z̄
-fea3 ź
-fea4 ž
-fea5 z̀
-fed3 名⃞
-fed4 動⃞
-fed5 形⃞
-fed6 副⃞
-fed7 助⃞
-fed8 介⃞
-fed9 嘆⃞
-feda 連⃞
-fee0 代⃞
-8eb3  伃
-8ec4  疒
-8ec9  鼧
-8eca  妸
-8ecb  鞲
-8ed3  擀
-8ed9  秔
-8eda  稉
-8ee3  冂
-8ee6  卩
-8eef  无
-8ef5  幺
-8f4e  烖
-8f53  苽
-8f54  辵
-8f59  袿
-8f61  椁
-8f67  瓌
-8f6a  恑
-8f73  卝
-8f77  鮌
-8f7b  觵
-8fa2  愙
-8fa6  嘅
-8fa8  丂
-8fad  簆
-8fb8  忼
-8fbe  絝
-8fe4  蟮
-8fec  鯶
-8ffa  茝
-9044  鰮
-9057  𦬊
-905f  鼂
-9064  从
-9067  筯
-906a  倽
-9071  躧
-907e  剗
-90a6  儁
-90ae  椀
-90bc  礚
-90c6  譌
-90c9  珏
-90d5  晳
-90d6  顇
-90fb  髤
-90fe  倸
-9144  劚
-9147  麕
-9151  竱
-9152  㑳
-9156  椉
-9157  辬
-9159  藳
-915a  巵
-915b  拕
-915d  稭
-916e  輨
-9178  晧
-91a7  嘑
-91c3  竢
-91c8  𦞦
-91f2  垍
-9249  叚
-9263  襍
-9264  灾
-9265  蹷
-92a4  韀
-92b7  瑨
-92b8  畺
-92c2  凥
-92e2  埛
-9341  閴
-934e  繦
-935c  慤
-9366  熺
-9369  葈
-936c  磶
-9370  䦧
-9376  衺
-9379  蠏
-937a  緤
-937d  訩
-93db  瑠
-93f7  袠
-93fb  穉
-9449  謿
-9452  飦
-9460  鼄
-9463  爥
-94a2  詧
-94ad  犫
-94b0  醻
-94b8  韂
-94d2  巛
-94e1  冲
-94ec  眎
-94fb  虵
-9546  羴
-9552  踈
-9569  衽
-9572  顬
-95c7  罇
-95f9  螋
-9644  遡
-9646  髿
-9652  笋
-9653  凇
-9657  峩
-9659  鵞
-965b  頟
-9671  揞
-9675  扅
-96a6  嚈
-96a7  釾
-96c7  唫
-96ce  鸎
-96d2  暎
-96d6  鼃
-976a  烱
-9773  鰕
-977b  喆
-97a2  餦
-97cd  槀
-97d2  →
-9842  曃
-984f  鱲
-98b2  䏽
-98b4  㗘
-98bb  玘
-98d0  磓
-98d4  輢
-98e5  慜
-98eb  裑
-98f3  溭
-98f4  摚
-9940  𠗌
-9948  䦯
-99ec  帉
-99ed  㕹
-99ef  硣
-99f8  㴆
-99fc  晐
-9a4a  㵠
-9a55  糂
-9a57  癧
-9a58  黣
-9a5c  槩
-9a6e  裒
-9a7d  奞
-9aa4  醶
-9aab  蟩
-9ab1  鉂
-9abd  㵒
-9acb  篗
-9ad4  琗
-9b47  厷
-fa4b  繮
-fa53  礴
-fa5c  鉢
-fa5d  愽
-fa65  栢
-fa74  勹
-faa2  坂
-faa7  犇
-fabc  躃
-fad5  冫
-fae1  㕷
-fae8  烟
-faec  噍
-faef  粃
-faf4  戹
-faf6  韠
-fafa  覩
-fb41  穅
-fb45  髴
-fb47  𢠳
-fb4f  倈
-fb52  鯿
-fb6c  疱
-fb6d  礮
-fb74  曕
-fb77  牀
-fbbf  攴
-fbc1  幞
-fbc5  蟇
-fbcc  脉
-fbe2  畮
-fbeb  醿
-fbfd  宀
-fc41  腼
-fc45  珉
-fc48  緍
-fc4b  鰵
-fc60  飰
-fc64  旊
-fc67  舚
-fc6e  鬴
-fc77  丿
-fc79  疴
-fca7  虬
-fcc3  銱
-fcc8  攧
-fcd0  匵
-fceb  媠
-fd40  謟
-fd41  縧
-fd44  鼗
-fd46  鞉
-fd4f  壜
-fd53  餹
-fd58  蹏
-fd60  髢
-fd6e  舚
-fd77  鞓
-fd7d  憹
-fdbc  靁
-fdc9  鮎
-fdca  鐧
-fdd3  嫏
-fdec  勑
-fdfc  瘻
-fe41  寗
-fe4f  寗
-feb4  臁
-feed  倮
-feef  勠
-fef3  鑥
+feef 勠
+fef3 鑥
+fefc 驘
