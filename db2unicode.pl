@@ -5,10 +5,19 @@ use utf8;
 use encoding 'utf8';
 use FindBin '$Bin';
 die "development.sqlite3 not in current directory!" unless -s "development.sqlite3";
-open my $fh, '<:utf8', "$Bin/sym.txt";
-my %map = map { split(/\s+/, $_, 2) } <$fh>;
+my %map = do {
+    local $/;
+    open my $fh, '<:utf8', "$Bin/sym.txt";
+    map { split(/\s+/, $_, 2) } split(/\n/, <$fh>);
+};
 my $re = join '|', keys %map;
-my $body = `sqlite3 development.sqlite3 .dump`;
-$body =~ s!<img src="images/($re).jpg" border="0" />(?:&nbsp;)?!$map{$1}!eg;
-$body =~ s!<span class="key">!!g;
-print $body;
+system("sqlite3 development.sqlite3 .dump > development.sqlite3.dump");
+open my $dump, '<:utf8', 'development.sqlite3.dump';
+my $seen_fcf2 = 0;
+while (<$dump>) {
+    $seen_fcf2++ if m{images/fcf2\.jpg};
+    $map{fcf2} = '不' if $seen_fcf2 > 2;
+    s!<img src="images/($re).jpg" border="0" />(?:&nbsp;)?!$map{$1}!eg;
+    s!<span class="key">!!g;
+    print;
+}
