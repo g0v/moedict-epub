@@ -1,9 +1,3 @@
-use utf8;
-binmode(STDOUT, ':encoding(utf8)');
-while (<DATA>) {
-    print if /[^\x00-\x{ffff}]/;
-}
-__DATA__
 8e42 覼
 8e49 畧
 8e4a 常⃞
