@@ -20,7 +20,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1359466407
-ModificationTime: 1359482424
+ModificationTime: 1359482882
 OS2TypoAscent: 0
 OS2TypoAOffset: 1
 OS2TypoDescent: 0
@@ -34,6 +34,7 @@ HheadAscent: 0
 HheadAOffset: 1
 HheadDescent: 0
 HheadDOffset: 1
+OS2Vendor: 'PfEd'
 MarkAttachClasses: 1
 DEI: 91125
 Encoding: UnicodeFull
@@ -247,7 +248,7 @@ EndChar
 
 StartChar: uF9868
 Encoding: 1022056 1022056 2
-Width: 0
+Width: 1048
 Flags: WO
 HStem: 163 37<415 521 562 730>
 VStem: 492 44<474 560 658 725.903> 521 41<17.0862 163>
