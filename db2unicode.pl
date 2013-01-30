@@ -23,6 +23,6 @@ while (<$dump>) {
     $map{fcf2} = '不' if $seen_fcf2 > 2;
     s!<img src="images/($re).jpg" border="0" />(?:&nbsp;)?!$map{$1}!eg;
     s!<span class="key">!!g;
-    s!<t[dh] [^>]*>!!g;
+    s!</?t[^>]*>!!g;
     print;
 }
