@@ -24,5 +24,6 @@ while (<$dump>) {
     s!<img src="images/($re).jpg" border="0" />(?:&nbsp;)?!$map{$1}!eg;
     s!<span class="key">!!g;
     s!</?t[^>]*>!!g;
+    s!<br/?>!\n!g;
     print;
 }
