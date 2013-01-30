@@ -25,5 +25,6 @@ while (<$dump>) {
     s!<span class="key">!!g;
     s!</?t[^>]*>!!g;
     s!<br/?>!\n!g;
+    s!｜!ㄧ!g;
     print;
 }
