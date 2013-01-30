@@ -14,7 +14,7 @@ print <<EOF;
 EOF
 
 $unicodeeval = sub{
-    ($f, $a) = @_;
+    ($a) = @_;
     return "<a href=\"http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=$a\">U+$a <img src=\"http://www.unicode.org/cgi-bin/refglyph?24-$1\"></a>";
 };
 
@@ -41,15 +41,15 @@ $vareval_canonical = sub{
 $moeeval = sub{
     # http://dict.variants.moe.edu.tw/yitib/ydb/ydb06239.htm
     ($a) = @_;
-    return "MOE $a <img src='http://140.111.34.46/dict/fonts/$a.gif'><img src='http://dict.revised.moe.edu.tw/images/$a.jpg'>";
+    return " $a <img src='http://140.111.34.46/dict/fonts/$a.gif'><img src='http://dict.revised.moe.edu.tw/images/$a.jpg'> ";
 };
 
 while ($line = <STDIN>) {
-    $line =~ s/U\+([0-9a-fA-F]{4,5})/$unicodeeval->($0,$1)/ge; # unicode
+    $line =~ s/U\+([0-9a-fA-F]{4,5})/$unicodeeval->($1)/ge; # unicode
     $line =~ s/CNS (\d+)-([0-9a-fA-F]{4})/$cnseval->($1,$2)/ge; # CNS11643
     $line =~ s/([a-zA-Z])(\d{5})\-(\d{3})/$vareval->($1,$2,$3)/ge; # Variant
     $line =~ s/VAR ([a-zA-Z])(\d{5})/$vareval_canonical->($1,$2)/ge; # Variant Canonical
-    $line =~ s/MOE [\da-fA-F]{4}/$moeeval->($0)/ge; # MoE dictionary encoding
+    $line =~ s/\ ([\da-fA-F]{4})\ /$moeeval->($1)/ge; # MoE dictionary encoding
     print $line;
 }
 
