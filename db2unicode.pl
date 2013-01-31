@@ -15,12 +15,14 @@ my %map = do {
     map { split(/\s+/, $_, 2) } split(/\n/, <$fh>);
 };
 my $re = join '|', keys %map;
+my $compat = join '|', map { substr($_, 1) } grep /^x/, keys %map;
 system("sqlite3 development.sqlite3 .dump > development.sqlite3.dump");
 open my $dump, '<:utf8', 'development.sqlite3.dump';
 my $seen_fcf2 = 0;
 while (<$dump>) {
     $seen_fcf2++ if m{images/fcf2\.jpg};
     $map{fcf2} = '不' if $seen_fcf2 > 2;
+    s!'<img src="images/($compat).jpg" border="0" />(?:&nbsp;)?'!"'".($map{"x$1"} || $map{$1}) . "'"!eg;
     s!<img src="images/($re).jpg" border="0" />(?:&nbsp;)?!$map{$1}!eg;
     s!<span class="key">!!g;
     s!</?t[^>]*>!!g;
