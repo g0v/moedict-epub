@@ -326,7 +326,7 @@ xfea9 流
 91c3 竢
 91c5 滙
 91c8 𦞦
-91c9 䁮
+91c9 䐶
 91cb 揢
 91ce 𤠾
 91cf 靧
@@ -1385,7 +1385,7 @@ fdc0 秊
 fdc1 㛂
 fdc4 稬
 fdc9 鮎
-fdca 鐧
+fdca 鐗
 fdcc 䗶
 fdce 蝲
 fdd0 衂
