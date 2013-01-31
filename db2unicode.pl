@@ -28,6 +28,6 @@ while (<$dump>) {
     s!</?t[^>]*>!!g;
     s!<br/?>!\n!g;
     s!｜!ㄧ!g;
-    s|˙|．!g;
+    s!˙!．!g;
     print;
 }
