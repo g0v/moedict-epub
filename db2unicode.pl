@@ -27,8 +27,8 @@ while (<$dump>) {
     s!<span class="key">!!g;
     s!</?t[^>]*>!!g;
     s!<br/?>!\n!g;
-    s!'｜'!'⼁'!g; # 2F01 is the word
-    s!｜，!'⼁，!g; # 2F01 is the word
+    s!'｜'!'⼁'!g; # 2F01 is the character
+    s!｜，!⼁，!g; # 2F01 is the character (in its own definition)
     s!｜!ㄧ!g; # This is the phonetic symbol
     s!˙!．!g;
     print;
