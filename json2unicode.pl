@@ -2,7 +2,7 @@
 # 用法：perl json2unicode.pl > output.unicode.json
 #
 # 如欲使用 fontforge/HANNOMMoEExtra-Regular 的 PUA 字形，請改用：
-# perl json22unicode.pl sym-pua.txt > output.unicode.json
+# perl json2unicode.pl sym-pua.txt > output.unicode.json
 #
 use strict;
 use utf8;
