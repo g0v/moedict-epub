@@ -75,63 +75,6 @@ sub heteronyms_of_character {
     return $heteronyms
 }
 
-
-sub get_sym {
-    my (%sym,$fh);
-    open $fh, "<:encoding(utf8)", "sym.txt";
-    while(<$fh>) {
-        chomp;
-        my ($k,$v)=split /\s/ => $_;
-        if ($v) {
-            $sym{$k} = $v;
-        }
-    }
-    return \%sym;
-}
-
-sub get_xhtml {
-    state $sym = get_sym();
-    my ($file, $char) = @_;
-    my $content = decode_utf8 read_file($file);
-    my $dom = Mojo::DOM->new("<div>$content</div>");
-    $dom->find("table,tr,td")->each(
-        sub {
-            my $a = $_->attrs;
-            for my $x (qw(border width cellspacing cellpadding)) {
-                delete $a->{$x};
-            }
-        }
-    );
-    $dom->find("img")->each(
-        sub {
-            my $e = $_;
-            my $imgfont = lc($_->attrs("src") =~ s/^images\///r =~ s/\.jpg$//r);
-            my $t = $sym->{$imgfont};
-            if (!$t) {
-                print STDERR "MISSING: $imgfont\n";
-            }
-            $e->replace("<span>$t</span>");
-        }
-    );
-
-    my $body = $dom->content_xml;
-    return <<XHTML;
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>$char</title>
-</head>
-<body>
-  <h1>$char</h1>
-  $body
-</body>
-</html>
-XHTML
-}
-
-
 sub template_chapter() {
 #   <style>body { margin-left: 5%; margin-right: 5%; margin-top: 5%; margin-bottom: 5%; text-align: justify; -epub-writing-mode: vertical-rl;}</style>
 
@@ -188,29 +131,30 @@ sub build_chapter {
     }
 }
 
-binmode STDOUT, ":encoding(utf8)";
+sub build_epub {
+    my @chapters;
 
-my @chapters;
+    for my $radical (sort_by_cjk_strokes radicals) {
+        push @chapters, build_chapter $radical => chars_with_radical $radical;
+    }
 
-for my $radical (sort_by_cjk_strokes radicals) {
-    push @chapters, build_chapter $radical => chars_with_radical $radical;
+    my $epub = EBook::EPUB->new;
+    $epub->add_title('萌典');
+    $epub->add_author('3du.tw');
+
+    for my $ch (@chapters) {
+        my $fn_in_epub = $ch->{title} . ".html";
+
+        my $id = $epub->add_xhtml($fn_in_epub, $ch->{content}, linear => "yes");
+        my $np = $epub->add_navpoint(
+            label   => $ch->{title},
+            id      => $id,
+            content => $fn_in_epub
+        );
+    }
+
+    $epub->pack_zip("moedict.epub");
+    say "DONE: moedict.epub";
 }
 
-my $epub = EBook::EPUB->new;
-$epub->add_title('萌典');
-$epub->add_author('3du.tw');
-
-for my $ch (@chapters) {
-    my $fn_in_epub = $ch->{title} . ".html";
-
-    my $id = $epub->add_xhtml($fn_in_epub, $ch->{content}, linear => "yes");
-    my $np = $epub->add_navpoint(
-        label   => $ch->{title},
-        id      => $id,
-        content => $fn_in_epub
-    );
-}
-
-$epub->pack_zip("moedict.epub");
-say "DONE: moedict.epub";
-
+build_epub();
