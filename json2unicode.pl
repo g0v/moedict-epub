@@ -21,6 +21,10 @@ my $seen_fcf2 = 0;
 local $/;
 while (<$dump>) {
     tr!\x{FF21}-\x{FF3A}\x{FF41}-\x{FF5A}!A-Za-z!;
+
+    # 14:04 < au> "｜": 上下貫通的樣子。說文解字：「｜，下上通也。」
+    # 14:05 < au> 這是在把此詞條及其內文從 ｜ 換成正確的字，即 ⼁ 
+    # 14:05 < au> 此外的 ｜ 都是注音符號而非 U+2F01 (gun3) 這個字。
     s!["「]\K｜!⼁!g; # 2F01 is the character
     s!｜!ㄧ!g; # This is the phonetic symbol
     s!˙!．!g; # middle dot
