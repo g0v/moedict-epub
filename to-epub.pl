@@ -1,5 +1,18 @@
 #!/usr/bin/ev perl
 use v5.14;
+use strict;
+
+BEGIN {
+    die <<USAGE unless -e "dict-revised.unicode.sqlite3";
+
+File missing. Run this first:
+
+   perl db2unicode.pl | sqlite3 dict-revised.unicode.sqlite3
+
+
+USAGE
+}
+
 use utf8;
 use encoding 'utf8';
 use EBook::EPUB;
@@ -20,7 +33,7 @@ sub sort_by_cjk_strokes {
 }
 
 sub dbh_moedict() {
-    state $dbh = DBI->connect("dbi:SQLite:dbname=moedict.sqlite3", "", "", { sqlite_unicode => 1 });
+    state $dbh = DBI->connect("dbi:SQLite:dbname=dict-revised.unicode.sqlite3", "", "", { sqlite_unicode => 1 });
 }
 
 sub radicals {
@@ -49,10 +62,7 @@ sub radicals {
 
 sub chars_with_radical {
     my $radical = shift;
-    my $chars = dbh_moedict->selectcol_arrayref("SELECT title FROM entries WHERE radical = ?", {}, $radical);
-
-    ## Exclude entries with <img> tags, basically means missig mappings in sym.txt
-    @$chars = sort_by_cjk_strokes grep { !/</ } @$chars;
+    my $chars = dbh_moedict->selectcol_arrayref("SELECT title FROM entries WHERE length(title) = 1 AND radical = ? ORDER by stroke_count ASC", {}, $radical);
 
     return @$chars;
 }
@@ -88,7 +98,7 @@ sub template_chapter() {
   <title><%= $title %></title>
 </head>
 <body>
-  <%= $title %>
+  <h1><%= $title %></h1>
   <%= $content %>
 </body>
 </html>
@@ -99,15 +109,15 @@ sub template_character {
     return <<'TEMPLATE';
 % my ($character, $heteronyms) = @_;
 % for my $h (@$heteronyms) {
-<h3><%= $character %><%= $h->{bopomofo} %></h3>
-<dd>
-    <dl>
+<h3><%= $character %><%= $h->{bopomofo} if $h->{bopomofo} %></h3>
 %   for my $d (@{$h->{definitions}}) {
-        <dt><%= $d->{type} %></dt>
-        <dd><%= $d->{def} %></dd>
+<p>
+% if ($d->{type}) {
+<strong><%= $d->{type} %></strong>
+% }
+<%= $d->{def} %>
+</p>
 %   }
-    </dl>
-</dd>
 % }
 TEMPLATE
 }
@@ -123,7 +133,7 @@ sub build_chapter {
         $content .= mt->render(template_character, $c, $h);
     }
 
-    my $content = mt->render(template_chapter, $title, $content);
+    $content = mt->render(template_chapter, $title, $content);
 
     return {
         title => $title,
