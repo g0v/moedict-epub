@@ -64,5 +64,5 @@ for my $part_file (@part_files) {
 
 my $json_encoder = JSON->new->pretty;
 
-write_file "data/radical_strokes.json", { binmode => ":utf8" }, $json_encoder->encode($radical_strokes_index);
-say "data/radical_strokes.json is produced";
+write_file "data/radical-strokes.json", { binmode => ":utf8" }, $json_encoder->encode($radical_strokes_index);
+say "data/radical-strokes.json is produced";
