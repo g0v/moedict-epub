@@ -43,7 +43,12 @@ sub parse_part_file {
             my $strokes = strokes_to_int($strokes_zh);
             my $char = ($_->attrs("href") =~ (m!'(.+)'!))[0]; # marmot ?
             if (length($char) > 1) {
-                $char = $sym{$char};
+                if ($sym{$char}) {
+                    $char = $sym{$char};
+                }
+                else {
+                    say STDERR "imgFont $char is missing from sym.txt";
+                }
             }
             push @{$stroke_to_chars->{$strokes}}, $char;
         }
