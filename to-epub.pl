@@ -151,10 +151,7 @@ sub build_epub {
     my $epub = EBook::EPUB->new;
     $epub->add_title('萌典');
     $epub->add_author('3du.tw');
-    $epub->add_meta_item(
-        'cover',
-        $epub->copy_image('img/icon.png', 'icon.png')
-    );
+    $epub->add_meta_item('cover', $epub->copy_image('img/icon.png', 'icon.png'));
 
     for my $ch (@chapters) {
         my $fn_in_epub = $ch->{title} . ".html";
