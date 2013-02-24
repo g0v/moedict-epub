@@ -80,7 +80,8 @@ sub build_epub {
         push @chapters, build_chapter $radical => chars_with_radical $radical;
     }
 
-    my $epub = EBook::EPUB->new;
+    my $epub = EBook::EPUB->new();
+    $epub->spine->page_progression_direction("rtl");
     $epub->add_title('萌典');
     $epub->add_author('3du.tw');
     $epub->add_meta_item('cover', $epub->copy_image('img/icon.png', 'icon.png'));
