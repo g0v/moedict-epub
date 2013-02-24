@@ -1,0 +1,12 @@
+% my ($character, $heteronyms) = @_;
+% for my $h (@$heteronyms) {
+<h3><%= $character %><%= $h->{bopomofo} if $h->{bopomofo} %></h3>
+%   for my $d (@{$h->{definitions}}) {
+<p>
+% if ($d->{type}) {
+<strong><%= $d->{type} %></strong>
+% }
+<%= $d->{def} %>
+</p>
+%   }
+% }
