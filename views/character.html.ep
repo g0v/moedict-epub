@@ -1,12 +1,19 @@
 % my ($character, $heteronyms) = @_;
-% for my $h (@$heteronyms) {
-<h3><%= $character %><%= $h->{bopomofo} if $h->{bopomofo} %></h3>
-%   for my $d (@{$h->{definitions}}) {
 <p>
-% if ($d->{type}) {
-<strong><%= $d->{type} %></strong>
+<b><%== $character->{title} %></b>
+<span class="character-stroke-count"><%== $character->{stroke_count} %></span> 劃；
+<span class="character-radical"><%== $character->{radical} %></span> 部 <span class="character-non-radical-stroke-count"><%== $character->{non_radical_stroke_count} %></span> 劃。
+
+% for my $h (@$heteronyms) {
+%== "注音 $h->{bopomofo}；" if $h->{bopomofo}
+%== "拼音 $h->{pinyin}；" if $h->{pinyin}
+%     for my $d (@{$h->{definitions}}) {
+%         if ($d->{type}) {
+<b class="character-definition-type"><%== $d->{type} =%></b>
+%         }
+<%== $d->{def} %>
+<%== join("" => @{$d->{example}}) if $d->{example} %>
+<%== join("" => @{$d->{link}}) if $d->{link} %>
+%     }
 % }
-<%= $d->{def} %>
 </p>
-%   }
-% }

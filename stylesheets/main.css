@@ -1,0 +1,28 @@
+body { 
+    text-align: left; 
+    -epub-writing-mode: horizontal-tb;
+}
+
+h1 {
+    font-size: 240%;
+}
+
+p {
+    display: block;
+    margin: 2em 0;
+}
+
+p:first-letter {
+    font-size: 240%;
+}
+
+.character-definition-type {
+    color: #fff;
+    background: #555;
+    border-radius: 1px;
+}
+
+.chapter-end-marker {
+    text-align: center;
+    margin-top: 4em;
+}

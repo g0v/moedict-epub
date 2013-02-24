@@ -1,14 +1,18 @@
 % my ($title, $content) = @_;
-%# #   <style>body { margin-left: 5%; margin-right: 5%; margin-top: 5%; margin-bottom: 5%; text-align: justify; -epub-writing-mode: vertical-rl;}</style>
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title><%= $title %></title>
+  <title><%== $title %></title>
+  <link rel="stylesheet" href="css/main.css" type="text/css" />
 </head>
 <body>
-  <h1><%= $title %></h1>
-  <%= $content %>
+  <h1><%== $title =%></h1>
+  <%= $content =%>
+  <div class="chapter-end-marker">※ ※ ※</div>
 </body>
 </html>
