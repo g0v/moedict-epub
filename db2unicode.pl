@@ -21,8 +21,8 @@ if (-s "dict-revised.sqlite3") {
     open my $dump, '<:utf8', 'dict-revised.sqlite3.dump';
     local $/;
     while (<$dump>) {
-        s< "\{\[ ($compat) \]\}" >
-         < '"'.($map{"x$1"} || $map{$1}) . '"' >egx;
+        s< (['"])\{\[ ($compat) \]\}\1 >
+         < $1.($map{"x$2"} || $map{$2}).$1 >egx;
         s< \{\[ ($re) \]\} >< $map{$1} >egx;
         print;
     }
