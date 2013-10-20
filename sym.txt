@@ -57,8 +57,8 @@ x99d7 米󠄀
 x99e0 契󠄀
 x99e6 寺󠄀
 x9956 比󠄀
-xfce8 氎
-x99c4 充
+xfce8 氎󠄂
+x99c4 充󠄂
 8e42 覼
 8e49 畧
 8e4a 常⃞
@@ -1397,7 +1397,6 @@ fcdc 隥
 fcde 廸
 fce6 曡
 fce7 氎
-fce8 氎
 fce9 飿
 fceb 媠
 fcef 煅
