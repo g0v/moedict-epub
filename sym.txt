@@ -57,8 +57,6 @@ x99d7 米󠄀
 x99e0 契󠄀
 x99e6 寺󠄀
 x9956 比󠄀
-xfce8 氎󠄂
-x99c4 充󠄂
 8e42 覼
 8e49 畧
 8e4a 常⃞
@@ -106,7 +104,7 @@ x99c4 充󠄂
 8eb2 咏
 8eb3 伃
 8eb6 擊
-8eb9 䖹
+8eb9 蝆
 8eba 叶
 8ebb 𥉐
 8ebc ⚋
@@ -199,7 +197,7 @@ x99c4 充󠄂
 8fa6 嘅
 8fa7 嘅
 8fa8 丂
-8fac 蔻
+8fac 𦸅
 8fad 簆
 8fb2 偘
 8fb5 肎
@@ -950,6 +948,7 @@ x99c4 充󠄂
 99b9 豪
 99ba 夢
 99c0 賴
+99c4 𠘺
 99c6 曼
 99c8 唐
 99c9 害
@@ -1079,7 +1078,7 @@ x99c4 充󠄂
 9ada 灟
 9adb 鐁
 9adc 搠
-9add ṅ
+9add ṁ
 9ade 䛒
 9adf ə
 9ae0 ḍ
@@ -1396,7 +1395,8 @@ fcdb 櫈
 fcdc 隥
 fcde 廸
 fce6 曡
-fce7 氎
+fce7 㲲
+fce8 氎
 fce9 飿
 fceb 媠
 fcef 煅
@@ -1459,7 +1459,7 @@ fdc0 秊
 fdc1 㛂
 fdc4 稬
 fdc9 鮎
-fdca 鐗
+fdca 鐧
 fdcc 䗶
 fdce 蝲
 fdd0 衂
@@ -1468,7 +1468,7 @@ fdd5 棃
 fdd6 䍦
 fdd7 涖
 fdda 鬲
-fddd 欖
+fddd 㰖
 fde0 擥
 fde3 孏
 fde9 𣓨
