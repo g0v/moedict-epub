@@ -2,7 +2,6 @@
 use v5.14;
 use strict;
 use utf8;
-use encoding 'utf8';
 use EBook::EPUB;
 use File::Slurp qw(read_file);
 use Mojo::DOM;
@@ -24,8 +23,10 @@ sub sort_by_cjk_strokes {
 }
 
 sub load_whole_dict {
-    state $dict = JSON::decode_json(read_file("dict-revised-unicode.json"));
+    state $dict;
     state $chars_with_radical = do {
+        my $json_text = read_file("dict-revised.json");
+        $dict = JSON::decode_json($json_text);
         my $x = {};
         for my $char (@$dict) {
             next if $char->{title} =~ m!{\[.+\]}!;
