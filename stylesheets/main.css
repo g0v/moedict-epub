@@ -1,6 +1,6 @@
 body { 
     text-align: justify;
-    -epub-writing-mode: vertical-rl;
+    /* -epub-writing-mode: vertical-rl; */
 }
 
 h1 {
