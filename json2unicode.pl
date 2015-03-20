@@ -6,7 +6,7 @@
 #
 use strict;
 use utf8;
-use encoding 'utf8';
+binmode STDOUT, ':utf8';
 use FindBin '$Bin';
 die "dict-revised.json not in current directory!" unless -s "dict-revised.json";
 my %map = do {
@@ -20,6 +20,7 @@ open my $dump, '<:utf8', 'dict-revised.json';
 my $seen_fcf2 = 0;
 local $/;
 while (<$dump>) {
+    s<\\u000[1-9]><>g; # strip control characters
     s< "\{\[ ($compat) \]\}" >
      < '"'.($map{"x$1"} || $map{$1}) . '"' >egx;
     s< \{\[ ($re) \]\} >< $map{$1} >egx;
