@@ -2,7 +2,7 @@
 use v5.14;
 use strict;
 use utf8;
-use EBook::EPUB;
+use EBook::EPUB::Lite;
 use File::Slurp qw(read_file);
 use Unicode::Collate;
 use Unicode::Collate::CJK::Stroke;
@@ -75,7 +75,7 @@ sub build_epub {
         push @chapters, build_chapter $radical => chars_with_radical $radical;
     }
 
-    my $epub = EBook::EPUB->new();
+    my $epub = EBook::EPUB::Lite->new();
     # $epub->spine->page_progression_direction("rtl");
 
     $epub->add_title('萌典');
