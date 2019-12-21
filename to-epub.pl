@@ -4,16 +4,10 @@ use strict;
 use utf8;
 use EBook::EPUB;
 use File::Slurp qw(read_file);
-use Mojo::DOM;
-use Encode qw(decode_utf8);
-use Unicode::Properties qw(uniprops);
 use Unicode::Collate;
 use Unicode::Collate::CJK::Stroke;
-use DBI;
-use JSON;
+use JSON qw(decode_json);
 use Mojo::Template;
-use List::MoreUtils qw(uniq);
-use File::Temp;
 
 sub mt { state $mt = Mojo::Template->new }
 
